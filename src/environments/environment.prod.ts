@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: '/businesses'
+  apiUrl: 'https://api.yelp.com/v3/businesses'
 };
