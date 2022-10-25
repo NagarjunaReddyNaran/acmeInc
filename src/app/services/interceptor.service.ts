@@ -11,10 +11,8 @@ export class InterceptorService implements HttpInterceptor {
         // add auth header with jwt if account is logged in and request is to the api url
             request = request.clone({
                 setHeaders: { 
-                  'Content-Type': 'application/json; charset=utf-8',
                   'Access-Control-Allow-Origin': '*',
-                        'Accept': 'application/json',
-                  Authorization: `Bearer ${this.apiKey}` 
+                  'Authorization': `Bearer ${this.apiKey}` 
                 }
             });
 
